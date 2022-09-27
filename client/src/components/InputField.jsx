@@ -9,13 +9,13 @@ export const StyledInputField = styled.input`
   background-color: ${v.primaryBGcolor};
   height: 40px;
   border-radius: 5px;
-  border: 1px solid ${v.secondaryBGcolor};
+  border: 2px solid ${v.secondaryBGcolor};
   margin: 10px 0 20px 0;
   padding: 20px;
   box-sizing: border-box;
   &:focus {
     outline: none;
-    background-color: ${v.primaryBGcolor};
+    background-color: ${v.secondaryBGcolor};
     transition: ease-in 0.3s;
   }
 `;
