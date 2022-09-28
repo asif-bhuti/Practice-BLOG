@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as v from "../styles/variables"
+import * as v from "./styles/variables"
 
 const StyledButton = styled.button`
   background: transparent;

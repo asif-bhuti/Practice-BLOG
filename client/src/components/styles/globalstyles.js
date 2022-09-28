@@ -16,18 +16,10 @@ body{
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
-  padding: 20px 20px;
+
   min-height: 100vh;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1300px;
-  margin-right: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  flex-direction: row;
   @media screen and (max-width: 991px) {
     padding-left: 30px;
     padding-right: 30px;

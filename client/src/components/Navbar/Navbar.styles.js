@@ -1,31 +1,29 @@
 import styled from "styled-components";
-import { Container } from "../../styles/globalstyles";
+import { Container } from "../styles/globalstyles";
 import { Link } from "react-router-dom";
 import { FaMagento } from "react-icons/fa";
-import { greyColor } from "../variables";
-import * as Var from "../variables";
 
 export const Nav = styled.nav`
-  background: ${Var.bgColor};
+  background: ${({ theme }) => theme.color.primary};
   height: 50px;
+  width: 100%;
   display: flex;
-  justify-content: flex;
-  position: sticky;
   align-items: center;
+  position: sticky;
   font-size: 1.2rem;
   top: 0;
   z-index: 999;
-  border-bottom: 2px solid ${Var.greyColor};
 `;
 
-export const NavbarContainer = styled(Container)`
+export const NavbarContainer = styled.div`
+  width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
-  height: 50px;
-  ${Container}
+  align-items: center;
 `;
 export const NavLogo = styled(Link)`
-  color: ${Var.textColorTitle};
+  color: ${({ theme }) => theme.color.textlight};
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -51,9 +49,11 @@ export const MobileIcon = styled.div`
 `;
 export const NavMenu = styled.ul`
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   list-style: none;
+  padding-right: 50px;
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
@@ -69,14 +69,14 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavLink = styled(Link)`
-  color: ${Var.textColorTitle};
+  color: ${({ theme }) => theme.color.textlight};
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
   &:hover {
-    color: ${Var.primaryColor};
+    color: ${({ theme }) => theme.color.textdark};
   }
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -85,9 +85,9 @@ export const NavLink = styled(Link)`
     display: table;
     color: #2d3436;
     &:hover {
-      border: 2px solid ${greyColor};
+      border: 2px solid ${({ theme }) => theme.color.foreground};
       border-radius: 5px;
-      color: ${Var.primaryColor};
+      color: ${({ theme }) => theme.color.primary};
       transition: all 0.3s ease;
     }
   }

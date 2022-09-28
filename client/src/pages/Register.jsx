@@ -1,6 +1,6 @@
 import {React, useState} from "react";
 import { Text, Button, Card, Input, InputField } from "../components";
-import { Container } from "../styles/globalstyles";
+import { Container } from "../components/styles/globalstyles";
 import styled from "styled-components";
 
 //Styled components for Select and FieldSet

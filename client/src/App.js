@@ -1,6 +1,6 @@
 import React from "react";
-import GlobalStyle from "./styles/globalstyles";
-import Theme from "./styles/Theme";
+import GlobalStyle, { Container } from "./components/styles/globalstyles";
+import Theme from "./components/styles/Theme";
 import {
   BrowserRouter,
   createBrowserRouter,

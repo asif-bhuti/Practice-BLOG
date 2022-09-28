@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 
-const primaryTheme = {
+const theme = {
   name: "main-theme",
   color: {
     primary: "#ffbe00",
@@ -11,11 +11,12 @@ const primaryTheme = {
     foreground: "f9f9f9",
     textdark: "#25182e",
     textlight: "#f9f9f9",
+    red: "red",
   },
 };
 
 const Theme = ({ children }) => {
-  return <ThemeProvider theme={primaryTheme}>{children}</ThemeProvider>;
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };
 
 export default Theme;
