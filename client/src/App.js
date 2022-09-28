@@ -1,7 +1,6 @@
 import React from "react";
 import GlobalStyle from "./styles/globalstyles";
-import primaryTheme from "./styles/Theme";
-import { ThemeProvider } from "styled-components";
+import Theme from "./styles/Theme";
 import {
   BrowserRouter,
   createBrowserRouter,
@@ -46,12 +45,10 @@ const router = createBrowserRouter([
 //the beginning of the app
 function App() {
   return (
-    <>
-      <ThemeProvider theme={primaryTheme}>
-        <GlobalStyle />
-        <RouterProvider router={router}></RouterProvider>
-      </ThemeProvider>
-    </>
+    <Theme>
+      <GlobalStyle />
+      <RouterProvider router={router}></RouterProvider>
+    </Theme>
   );
 }
 
