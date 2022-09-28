@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as v from "./variables";
+import * as v from "../styles/variables"
 
 const StyledButton = styled.button`
   background: transparent;
@@ -12,7 +12,6 @@ const StyledButton = styled.button`
   font-weight: 600;
   outline: none;
   border: 2px solid ${v.secondaryElementColor};
-  border-radius: 10px;
   cursor: pointer;
   &.primary {
     background-color: ${v.primaryTextColor};

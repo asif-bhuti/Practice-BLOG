@@ -1,7 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
-import * as v from "./variables";
+import * as v from "../styles/variables";
 
 export const StyledInputField = styled.input`
   display: block;

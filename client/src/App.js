@@ -1,5 +1,7 @@
 import React from "react";
-import GlobalStyle from "./globalstyles";
+import GlobalStyle from "./styles/globalstyles";
+import primaryTheme from "./styles/Theme";
+import { ThemeProvider } from "styled-components";
 import {
   BrowserRouter,
   createBrowserRouter,
@@ -9,6 +11,7 @@ import {
 import { Navbar, Footer } from "./components";
 import { Home, Login, Register, Single, Write } from "./pages";
 
+//Layout Element for Navbar and Footer
 const Layout = () => {
   return (
     <>
@@ -19,6 +22,7 @@ const Layout = () => {
   );
 };
 
+//the router starts here
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,11 +43,14 @@ const router = createBrowserRouter([
   },
 ]);
 
+//the beginning of the app
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <RouterProvider router={router}></RouterProvider>;
+      <ThemeProvider theme={primaryTheme}>
+        <GlobalStyle />
+        <RouterProvider router={router}></RouterProvider>
+      </ThemeProvider>
     </>
   );
 }

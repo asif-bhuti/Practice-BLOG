@@ -1,4 +1,4 @@
-export { Navbar } from "./Navbar";
+export { Navbar } from "./Navbar/Navbar";
 export { Footer } from "./Footer";
 export { Card } from "./Card";
 export { Button } from "./Button";
