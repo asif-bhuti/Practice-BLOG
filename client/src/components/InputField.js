@@ -1,21 +1,21 @@
 import React from "react";
 
 import styled from "styled-components";
-import * as v from "./styles/variables";
+import {v} from "./styles/variables";
 
 export const StyledInputField = styled.input`
   display: block;
   width: 100%;
-  background-color: ${v.primaryBGcolor};
+  background-color: ${({theme})=>theme.color.foreground};
   height: 40px;
-  border-radius: 5px;
-  border: 2px solid ${v.secondaryBGcolor};
+  border-radius: ${v.borderRadius};
+  border: 2px solid ${({theme})=>theme.color.background};
   margin: 10px 0 20px 0;
   padding: 20px;
   box-sizing: border-box;
   &:focus {
     outline: none;
-    background-color: ${v.secondaryBGcolor};
+    background-color: ${({theme})=>theme.color.background};
     transition: ease-in 0.3s;
   }
 `;

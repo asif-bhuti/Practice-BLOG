@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as v from "./styles/variables";
+import {v,b,s} from "./styles/variables";
 
 const StyledInput = styled.input`
   display: block;
@@ -21,6 +21,8 @@ const StyledInput = styled.input`
 `;
 
 export const Input = ({ type, name, onChange, value }) => {
+
+  
   return (
     <StyledInput type={type} name={name} onChange={onChange} value={value} />
   );

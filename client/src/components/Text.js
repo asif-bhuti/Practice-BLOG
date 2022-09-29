@@ -1,18 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-import * as v from "./styles/variables";
+import { v, s } from "./styles/variables";
 
 const StyledText = styled.p`
   font-family: Poppins;
   font-size: 1rem;
   font-weight: 400;
-  color: ${v.secondaryTextColor};
   margin: 1px 0 0 0;
+  color: ${({ theme }) => theme.color.textdark};
+  &.header {
+    font-family: Nunito;
+    font-size: ${v.headerHeight};
+    font-weight: 600;
+    color: ${({ theme }) => theme.color.header};
+  }
   &.title {
     font-family: Nunito;
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 600;
-    color: ${v.primaryTextColor};
+    color: ${({ theme }) => theme.color.header};
   }
   &.small {
     font-size: 0.9rem;

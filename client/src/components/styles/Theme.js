@@ -4,11 +4,13 @@ import { ThemeProvider } from "styled-components";
 const theme = {
   name: "main-theme",
   color: {
-    primary: "#ffbe00",
-    secondary: "#ca1f3d",
-    header: "#25182e",
+    primary: "#00848c",
+    primaryDark: "#037272",
+    secondary: "#fccf17",
+    secondaryDark: "#fec20f",
+    header: "#1c1f4c",
     background: "#eee",
-    foreground: "f9f9f9",
+    foreground: "#f9f9f9",
     textdark: "#25182e",
     textlight: "#f9f9f9",
     red: "red",

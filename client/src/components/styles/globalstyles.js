@@ -16,9 +16,9 @@ body{
 
 export const Container = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-
-  min-height: 100vh;
   flex-direction: row;
   @media screen and (max-width: 991px) {
     padding-left: 30px;

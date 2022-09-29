@@ -1,25 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import * as v from "./styles/variables"
+import { b, v, s } from "./styles/variables";
 
 const StyledButton = styled.button`
-  background: transparent;
   white-space: nowrap;
   padding: 4px 30px;
   margin: 5px 10px;
-  color: ${v.secondaryElementColor};
   font-size: 18px;
   font-weight: 600;
   outline: none;
-  border: 2px solid ${v.secondaryElementColor};
+  border-radius: ${v.borderRadius};
   cursor: pointer;
   &.primary {
-    background-color: ${v.primaryTextColor};
-    color: ${v.primaryBGcolor};
+    background: ${({ theme }) => theme.color.primary};
+    border: 2px solid ${({ theme }) => theme.color.primary};
+    color: ${({ theme }) => theme.color.textlight};
     border: 2px solid ${v.primaryTextColor};
     &:hover {
-      background-color: transparent;
-      color: ${v.primaryTextColor};
+      background-color: ${({ theme }) => theme.color.primaryDark};
+    }
+  }
+  &.secondary {
+    background: ${({ theme }) => theme.color.secondary};
+    border: 2px solid ${({ theme }) => theme.color.secondary};
+    color: ${({ theme }) => theme.color.textdark};
+    &:hover {
+      background-color: ${({ theme }) => theme.color.secondaryDark};
     }
   }
   &:hover {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as v from "./styles/variables";
+import {v,b,s} from "./styles/variables"
 
 const StyledCard = styled.div`
   width: 100%;
@@ -9,9 +9,10 @@ const StyledCard = styled.div`
   border-radius: 10px;
   box-sizing: border-box;
   margin: 10px;
-  background: ${v.primaryBGcolor};
-  border-radius: 10px;
-  border: 1px solid ${v.primaryBGcolor};
+  background: ${({theme})=>theme.color.foreground};
+  border-radius: ${v.borderRadius};
+  border: 1px solid ${({theme})=>theme.color.foreground};
+  box-shadow: ${v.cardBoxShadow};
   .mid {
     max-width: 800px;
   }

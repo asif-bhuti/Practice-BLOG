@@ -10,7 +10,7 @@ import {
   NavMenu,
   NavItem,
   NavLink,
-} from "./Navbar.styles";
+} from "./Navbar.styled";
 import { Button } from "../Button";
 
 export const Navbar = () => {
@@ -24,7 +24,8 @@ export const Navbar = () => {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              <NavIcon />React Blog
+              <NavIcon />
+              React Blog
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -34,10 +35,13 @@ export const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/services">Blogs</NavLink>
+                <NavLink to="/Blogs">Blogs</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/sign-up">Login</NavLink>
+                <NavLink to="/logout">Logout</NavLink>
+              </NavItem>
+              <NavItem>
+                <Button className="primary">Write</Button>
               </NavItem>
             </NavMenu>
           </NavbarContainer>
