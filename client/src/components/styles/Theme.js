@@ -11,8 +11,8 @@ const theme = {
     header: "#1c1f4c",
     background: "#eee",
     foreground: "#f9f9f9",
-    textdark: "#25182e",
     textlight: "#f9f9f9",
+    textdark: "#25182e",
     red: "red",
   },
 };

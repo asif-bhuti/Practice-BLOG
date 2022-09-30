@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Text, Card, Button } from "../components";
-import { Container } from "../components/styles/globalstyles";
+import { Text, Card, Button, Img } from "../../components";
+import { ContainerHome, StyledLink } from "./Home.styled";
 
 export const Home = () => {
   const posts = [
@@ -26,20 +25,19 @@ export const Home = () => {
   ];
   return (
     <div>
-      <div>
+      <ContainerHome>
         {posts.map((post) => (
-          <Container key={post.id}>
-            <Card>
-              <img src={post.img} alt="blog img" />
-              <Link to={`/post/${post.id}`}>
-                <Text className="title">{post.title}</Text>
-              </Link>
+          <StyledLink to={`/post/${post.id}`} key={post.id}>
+            <Card className={`sm`}>
+              {" "}
+              <Img src={post.img} alt="blog img" />
+              <Text className="title">{post.title}</Text>
               <Text>{post.desc}</Text>
               <Button className={`secondary`}> Read More</Button>
             </Card>
-          </Container>
+          </StyledLink>
         ))}
-      </div>
+      </ContainerHome>
     </div>
   );
 };

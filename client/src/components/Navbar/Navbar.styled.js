@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { Container } from "../styles/globalstyles";
 import { Link } from "react-router-dom";
-import { FaMagento } from "react-icons/fa";
+import { FaBlog } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  background: ${({ theme }) => theme.color.background};
+  background: ${({ theme }) => theme.color.primary};
   height: 50px;
   width: 100%;
   display: flex;
+  padding: 0 20px;
   align-items: center;
   position: sticky;
   font-size: 1.2rem;
@@ -23,7 +23,7 @@ export const NavbarContainer = styled.div`
   align-items: center;
 `;
 export const NavLogo = styled(Link)`
-  color: ${({ theme }) => theme.color.textdark};
+  color: ${({ theme }) => theme.color.textlight};
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -31,7 +31,7 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
 `;
-export const NavIcon = styled(FaMagento)`
+export const NavIcon = styled(FaBlog)`
   margin-right: 0.5rem;
 `;
 
@@ -53,7 +53,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   text-align: center;
   list-style: none;
-  padding-right: 50px;
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
@@ -69,7 +68,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavLink = styled(Link)`
-  color: ${({ theme }) => theme.color.textdark};
+  color: ${({ theme }) => theme.color.textlight};
   display: flex;
   align-items: center;
   text-decoration: none;

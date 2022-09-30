@@ -5,3 +5,6 @@ export { Button } from "./Button";
 export { Input } from "./Input";
 export { InputField } from "./InputField";
 export { Text } from "./Text";
+export { Img } from "./Img";
+export { Menu } from "./Menu";
+export { Content } from "./Content";

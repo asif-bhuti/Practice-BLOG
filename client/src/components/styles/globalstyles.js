@@ -16,16 +16,16 @@ body{
 
 export const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   flex-direction: row;
   @media screen and (max-width: 991px) {
     padding-left: 30px;
     padding-right: 30px;
   }
 `;
-
 export const TextArea = styled.textarea`
   background-color: #eee;
   width: 100%;

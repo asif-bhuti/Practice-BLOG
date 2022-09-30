@@ -4,28 +4,15 @@ import Theme from "./components/styles/Theme";
 import {
   BrowserRouter,
   createBrowserRouter,
-  Outlet,
   RouterProvider,
 } from "react-router-dom";
-import { Navbar, Footer } from "./components";
-import { Home, Login, Register, Single, Write } from "./pages";
-
-//Layout Element for Navbar and Footer
-const Layout = () => {
-  return (
-    <>
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </>
-  );
-};
+import { NavFooter, Home, Login, Register, Single, Write } from "./pages";
 
 //the router starts here
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <NavFooter />,
     children: [
       { path: "/", element: <Home /> },
       { path: "/post/:id", element: <Single /> },

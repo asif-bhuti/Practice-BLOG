@@ -20,7 +20,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#2d3436" }}>
+      <IconContext.Provider value={{ color: "#f9f9f9" }}>
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
@@ -41,7 +41,7 @@ export const Navbar = () => {
                 <NavLink to="/logout">Logout</NavLink>
               </NavItem>
               <NavItem>
-                <Button className="primary">Write</Button>
+                <Button className={`secondary`}>Write</Button>
               </NavItem>
             </NavMenu>
           </NavbarContainer>

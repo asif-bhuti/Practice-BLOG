@@ -15,7 +15,6 @@ const StyledButton = styled.button`
     background: ${({ theme }) => theme.color.primary};
     border: 2px solid ${({ theme }) => theme.color.primary};
     color: ${({ theme }) => theme.color.textlight};
-    border: 2px solid ${v.primaryTextColor};
     &:hover {
       background-color: ${({ theme }) => theme.color.primaryDark};
     }
