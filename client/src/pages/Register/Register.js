@@ -1,6 +1,6 @@
-import {React, useState} from "react";
-import { Text, Button, Card, Input, InputField } from "../components";
-import { Container } from "../components/styles/globalstyles";
+import { React, useState } from "react";
+import { Text, Button, Card, Input, InputField } from "../../components";
+import { Container } from "../../components/styles/globalstyles";
 import styled from "styled-components";
 
 //Styled components for Select and FieldSet
@@ -33,23 +33,21 @@ export const Select = styled.select`
 
 //Register Page Element
 export const Register = () => {
-
   //hook for username and password
   const [data, setdata] = useState({
-    username:'',
-    password:''
-  })
+    username: "",
+    password: "",
+  });
 
   //handles Submit
-  const handleSubmit = (e)=>{
-    setdata({...data,[e.target.name]:e.target.value})
-  }
+  const handleSubmit = (e) => {
+    setdata({ ...data, [e.target.name]: e.target.value });
+  };
 
   //handles the Form
-  const submitForm = async (e)=>{
+  const submitForm = async (e) => {
     e.preventDefault();
-  }
-
+  };
 
   return (
     <Container>

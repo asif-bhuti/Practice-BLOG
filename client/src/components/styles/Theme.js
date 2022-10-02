@@ -13,7 +13,8 @@ const theme = {
     foreground: "#f9f9f9",
     textlight: "#f9f9f9",
     textdark: "#25182e",
-    red: "red",
+    error: "#ed4337",
+    ok: "#3aab58",
   },
 };
 

@@ -12,13 +12,13 @@ const StyledCard = styled.div`
   border-radius: ${v.borderRadius};
   border: 1px solid ${({ theme }) => theme.color.foreground};
   box-shadow: ${v.cardBoxShadow};
-  &.lrg {
+  &.large {
     max-width: 800px;
   }
-  &.m {
+  &.medium {
     max-width: 600px;
   }
-  &.sm {
+  &.small {
     max-width: 400px;
   }
 `;

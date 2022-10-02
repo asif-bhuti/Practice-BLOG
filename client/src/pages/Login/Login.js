@@ -51,7 +51,7 @@ export const Login = () => {
 
   return (
     <ContainerLogin>
-      <Card>
+      <Card className={`medium`}>
         <form onSubmit={submitForm}>
           <Text className="header">Sign In</Text>
           <label htmlFor="">

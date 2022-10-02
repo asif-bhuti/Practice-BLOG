@@ -11,5 +11,7 @@ export const MenuDiv = styled.div`
 
 export const SingleContainer = styled(Container)`
   gap: 50px;
+  align-items: flex-start;
+  margin: 20px 0;
   ${Container}
 `;
