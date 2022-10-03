@@ -1,29 +1,36 @@
 import React from "react";
 import styled from "styled-components";
-import {v,b,s} from "./styles/variables";
+import { v } from "./styles/variables";
 
 const StyledInput = styled.input`
   display: block;
-  width: 100%;
-  background-color: ${v.primaryBGcolor};
+  width: 400px;
+  background-color: ${({ theme }) => theme.color.foreground};
   height: 40px;
-  border-radius: 5px;
-  border: 1px solid ${v.secondaryElementColor};
+  border-radius: ${v.borderRadius};
+  border: 2px solid ${({ theme }) => theme.color.background};
   margin: 10px 0 20px 0;
   padding: 20px;
   box-sizing: border-box;
+  &.field {
+    width: 100%;
+    height: 500px;
+    text-align: start;
+  }
   &:focus {
     outline: none;
-    background-color: ${v.secondaryBGcolor};
-    border-color: ${v.primaryElementColor};
+    background-color: ${({ theme }) => theme.color.background};
     transition: ease-in 0.3s;
   }
 `;
-
-export const Input = ({ type, name, onChange, value }) => {
-
-  
+export const Input = ({ type, name, onChange, value, placeholder }) => {
   return (
-    <StyledInput type={type} name={name} onChange={onChange} value={value} />
+    <StyledInput
+      type={type}
+      name={name}
+      onChange={onChange}
+      placeholder={placeholder}
+      value={value}
+    />
   );
 };

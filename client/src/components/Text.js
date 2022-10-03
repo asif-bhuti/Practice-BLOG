@@ -16,6 +16,9 @@ const StyledText = styled.p`
     font-weight: 600;
     color: ${({ theme }) => theme.color.header};
   }
+  &.bold {
+    font-weight: 600;
+  }
   &.small {
     font-size: 0.9rem;
     opacity: 0.8;
