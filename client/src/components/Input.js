@@ -12,6 +12,9 @@ const StyledInput = styled.input`
   margin: 10px 0 20px 0;
   padding: 20px;
   box-sizing: border-box;
+  &.small {
+    height: 20px;
+  }
   &.field {
     width: 100%;
     height: 500px;
@@ -23,7 +26,16 @@ const StyledInput = styled.input`
     transition: ease-in 0.3s;
   }
 `;
-export const Input = ({ type, name, onChange, value, placeholder }) => {
+export const Input = ({
+  type,
+  name,
+  onChange,
+  value,
+  placeholder,
+  style,
+  className,
+  id,
+}) => {
   return (
     <StyledInput
       type={type}
@@ -31,6 +43,9 @@ export const Input = ({ type, name, onChange, value, placeholder }) => {
       onChange={onChange}
       placeholder={placeholder}
       value={value}
+      style={style}
+      className={className}
+      id={id}
     />
   );
 };

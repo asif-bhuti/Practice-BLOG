@@ -11,6 +11,8 @@ const StyledHeader = styled.h1`
   &.small {
     font-size: 1.2rem;
   }
+  &.medium {
+  }
   &.large {
     font-size: ${v.headerHeight};
     color: ${({ theme }) => theme.color.header};

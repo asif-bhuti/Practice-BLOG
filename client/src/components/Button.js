@@ -5,7 +5,7 @@ import { b, v, s } from "./styles/variables";
 const StyledButton = styled.button`
   white-space: nowrap;
   padding: 4px 30px;
-  margin: 5px 10px;
+  margin: 5px 0px;
   font-size: 18px;
   font-weight: 600;
   outline: none;
@@ -26,6 +26,12 @@ const StyledButton = styled.button`
     &:hover {
       background-color: ${({ theme }) => theme.color.secondaryDark};
     }
+  }
+  &.small {
+    padding: 4px 10px;
+    margin: 5px 0px;
+    font-size: 15px;
+    font-weight: 400;
   }
   &:hover {
     transition: all 0.3s ease-out;
