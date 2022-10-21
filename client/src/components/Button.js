@@ -20,7 +20,7 @@ const StyledButton = styled.button`
     }
   }
   &.secondary {
-    background: ${({ theme }) => theme.color.secondary};
+    background: transparent;
     border: 2px solid ${({ theme }) => theme.color.secondary};
     color: ${({ theme }) => theme.color.textdark};
     &:hover {

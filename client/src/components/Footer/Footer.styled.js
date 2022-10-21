@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaBlog } from "react-icons/fa";
 
 export const FooterContainer = styled.nav`
-  background: ${({ theme }) => theme.color.primary};
+  background: ${({ theme }) => theme.color.background};
   width: 100%;
   display: flex;
   padding: 20px 20px;

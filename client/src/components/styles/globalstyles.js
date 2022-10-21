@@ -10,7 +10,7 @@ padding: 0;
 font-family: 'Nunito', sans-serif;
 }
 body{
-  background: #eee;
+  background: #f9f9f9;
 }
 `;
 

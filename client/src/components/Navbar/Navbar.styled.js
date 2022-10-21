@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaBlog } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  background: ${({ theme }) => theme.color.primary};
+  background: ${({ theme }) => theme.color.background};
   height: 50px;
   width: 100%;
   display: flex;
@@ -23,7 +23,7 @@ export const NavbarContainer = styled.div`
   align-items: center;
 `;
 export const NavLogo = styled(Link)`
-  color: ${({ theme }) => theme.color.textlight};
+  color: ${({ theme }) => theme.color.textdark};
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -68,7 +68,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavLink = styled(Link)`
-  color: ${({ theme }) => theme.color.textlight};
+  color: ${({ theme }) => theme.color.textdark};
   display: flex;
   align-items: center;
   text-decoration: none;
